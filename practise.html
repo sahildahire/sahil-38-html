@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple jQuery Example</title>
+    <!-- Include jQuery library from a CDN (Content Delivery Network) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // When the document is ready (fully loaded), execute this code
+
+            // Select the button element with the ID "toggleButton"
+            $("#toggleButton").click(function(){
+                // When the button is clicked, toggle the visibility of the element with ID "content"
+                $("#content").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Simple jQuery Example</h1>
+    <button id="toggleButton">Toggle Content</button>
+    <div id="content" style="display: none;">
+        This content can be toggled.
+    </div>
+</body>
+</html>
